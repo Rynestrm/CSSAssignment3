@@ -1,0 +1,193 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+header, footer {
+  border-top: 5px solid #0609b3;
+  border-bottom: 5px solid #0609b3;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+* {
+  font-size: 10px;
+}
+
+body {
+  line-height: 1.5;
+  background-color: #e2e2e2;
+}
+
+section .indent {
+  text-indent: 4rem;
+}
+
+  /* ----- styling ----- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'aurulent', serif;
+  letter-spacing: .2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3,
+h4,
+li,
+p,
+a {
+  font-size: 1.7rem;
+}
+
+p,
+a,
+li {
+  letter-spacing: .05rem;
+  font-family: 'andada' serif;
+  line-height: 2.4rem;
+}
+
+  /* ----- fonts ----- */
+
+/* https://www.fontsquirrel.com/fonts/andada */
+@font-face {
+  font-family: 'andada';
+    src: url('../assets/fonts/Andada-Regular.otf')format('opentype');
+    src: url('../assets/fonts/Andada-Bold.otf')format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* https://www.fontsquirrel.com/fonts/Aurulent-Sans */
+@font-face {
+  font-family: 'aurulent';
+    src: url('../assets/fonts/AurulentSans-Regular.otf')format('opentype');
+    src: url('../assets/fonts/AurulentSans-Bold.otf')format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+  /* ----- links ----- */
+
+a {
+  color: #1e22f0;
+  outline: none;
+}
+
+a:link {
+  color: #1e22f0;
+}
+
+a:visited {
+  color: #1e22f0;
+}
+
+a:focus {
+  background-color: #0609b3;
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #0609b3;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: #0609b3;
+  color: #fff;
+}
+
+/* ----- external links ----- */
+section p a::before {
+  font-family: FontAwesome;
+  content: '\f360';
+}
+
+/* ----- navigation ----- */
+
+aside h2,
+nav h2 {
+  text-decoration: underline;
+}
+
+nav h2 {
+  text-align: center;
+}
+
+aside ul,
+aside ol,
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+aside li,
+aside li a, 
+aside p {
+  line-height: 1.5;
+  letter-spacing: .2rem;
+  font-weight: bold;
+}
+
+nav li a,
+nav li {
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px 10px;
+}
+
+  /* ----- header and footer ----- */
+
+  footer p {
+    font-family: 'Merriweather', serif;
+  }
+  
